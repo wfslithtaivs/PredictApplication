@@ -55,12 +55,12 @@ shinyUI(fluidPage(
                   mainPanel(
                           h4('You entered:'),
                           verbatimTextOutput("sentence"),
-                          h4('Sentence stat:'),
+                          h4('Preprocessed to:'),
                           verbatimTextOutput("takeSome"),
                           h4('Top 5 predicted:'),
-                          tableOutput("testprediction"),
-                          h4('Top 5 predicted:'),
-                          tableOutput("realprediction")
+                          tableOutput("realprediction"),
+                          h4('Top 5 random unigrams:'),
+                          tableOutput("testprediction")
 
 
                   )
