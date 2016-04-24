@@ -34,13 +34,13 @@ shinyUI(fluidPage(
                   sidebarPanel(
                           withTags({
                                   div(class="header", checked=NA, style = "color:grey",
-                                      p("Enter the word or sentence, don't forget about symbols and numbers, press the Submit button and enjoy the artificial intelligence")
+                                      p("Enter the word or sentence, don't forget about symbols and numbers, press the 'Guess the next word' button and enjoy the artificial intelligence")
                                   )
                           }),
 
-                          textInput("sentence", "Input here:", value = "Keep typing ..."),
+                          textInput("sentence", "Input here:", value = "That stuff ..."),
 
-                          submitButton('Submit'),
+                          submitButton('Guess the next word'),
 
                           withTags({
                                         div(class="header", checked=NA, style = "color:grey",
@@ -59,7 +59,7 @@ shinyUI(fluidPage(
                           verbatimTextOutput("takeSome"),
                           h4('Top 5 predicted:'),
                           tableOutput("realprediction"),
-                          h4('Top 5 random unigrams:'),
+                          h4('5 random n-grams:'),
                           tableOutput("testprediction")
 
 

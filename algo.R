@@ -1,7 +1,7 @@
 # Load dictionary
 
 if (!exists("fullDict")) {
-        fullDict <- read.table("data/out1.txt", stringsAsFactors=FALSE,
+        fullDict <- read.table("data/dict2.txt", stringsAsFactors=FALSE,
                              fill = TRUE, header = TRUE)
 }
 

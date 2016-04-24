@@ -11,7 +11,7 @@ predict <- function(x){
 
 # Simple BackOff with geometric progression coeffitient - initial level no coeff,
         # level 1 - 0.4, level 2 - 0.16 etc.
-        res <- data.frame("third" = "the", probs = 0.1)
+        res <- data.frame("third" = "the", probs = 0.01)
         d3 <- subset(fullDict, first == x[1, 2] & second == x[1, 3], select = c(third, probs))
         d2 <- subset(fullDict, first == NA & second == x[1, 3], select = c(third, probs))
         if (length(d2$third) != 0) {res$probs <- res$probs*0.16; d2$probs <- d2$probs*0.4; res <- rbind(d2, res)}
@@ -38,7 +38,7 @@ shinyServer(function(input, output) {
 
         output$sentence <- renderPrint({input$sentence})
         output$takeSome <- renderPrint({values()})
-        output$testprediction <- renderTable({sample_n(fullDict, 10)})
+        output$testprediction <- renderTable({subset(sample_n(fullDict, 5), select = c("first", "second", "third"))})
         output$realprediction <- renderTable({head(predict(preprocess(input$sentence)), 5)})
 
         }
