@@ -1,4 +1,4 @@
-# PredictApplication
+# Word Prediction Data Product
 
 <b>Predict Application for Coursera Data Science Specialisation Capstone Project</b>
 
