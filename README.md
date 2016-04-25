@@ -22,12 +22,12 @@ Application can be founded here - https://wfslithtaivs.shinyapps.io/PredictAppli
 <b>Repository overwiev</b>
 
 (Only meaningful files mentioned)
-data > dict2.txt    - dictionary used
-www	> bootstrap.css - general style
-README.md	- that what you are reading right now
-algo.R	- algorithmic part (loading dictionaries, preprocessing input)
-server.R	- prediction and output
-ui.R	- user interface and style update
-CreateDictionaries.R	- non reproducible set of instructions, actually, most of my text-analysis findings for this project (saved for future). Some of the text preprocessing were performed with command line, so, doesn't mentioned here. 
+- data > dict2.txt    - dictionary used
+- www	> bootstrap.css - general style
+- README.md	- that what you are reading right now
+- algo.R	- algorithmic part (loading dictionaries, preprocessing input)
+- server.R	- prediction and output
+- ui.R	- user interface and style update
+- CreateDictionaries.R	- non reproducible set of instructions, actually, most of my text-analysis findings for this project (saved for future). Some of the text preprocessing were performed with command line, so, doesn't mentioned here. 
 
 <b>Thank you for reading!</b>
